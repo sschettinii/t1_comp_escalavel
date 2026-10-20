@@ -1,0 +1,6 @@
+# Datasets baixados e gerados por download_data.py
+/data/
+
+# Arquivos locais do Python
+__pycache__/
+*.py[cod]
