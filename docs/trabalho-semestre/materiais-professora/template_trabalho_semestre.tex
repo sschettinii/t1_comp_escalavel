@@ -1,0 +1,163 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{soulutf8}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage[font=footnotesize, justification=justified]{caption}
+\usepackage[font=scriptsize]{subcaption}
+\usepackage{listingsutf8}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{adjustbox}
+\usepackage{animate}
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsthm,thmtools}
+\usepackage{scalerel}
+\usepackage{lmodern}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{graphicx} % Required for inserting 
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+
+
+\usepackage{geometry}
+\geometry{a4paper,
+        width=150mm, %ok
+            top=20mm, %ok
+            bottom=40mm,
+            bindingoffset=3mm
+        }
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\noindent{\Large \textbf{Ciência de Dados e Inteligência Artificial}}\\
+                {\normalsize \textbf{Disciplina:} Computação Escalável} \\
+                {\normalsize \textbf{Professor:} Larissa C. Shimomura}}
+\fancyhead[R]{\includegraphics[width = 0.4\textwidth]{logo_uel.png}
+}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headsep}{2.5cm}
+\fancyheadoffset{1cm}
+
+
+%\definecolor{numbers}{HTML}{9E9E9E}
+\definecolor{keywords}{HTML}{E91E63}
+\definecolor{comments}{HTML}{9E9E9E}
+\definecolor{strings}{HTML}{AFB42B}
+\definecolor{environments}{HTML}{03A9F4}
+\definecolor{options}{HTML}{FF5722}
+
+\definecolor{link_color}{RGB}{51,51,178}
+
+\lstset {
+	basicstyle=\fontfamily{cmtt}\selectfont,
+	%numbers=left,
+	%numberstyle=\tiny\color{numbers},
+	%stepnumber=1,
+	%numbersep=10pt,
+	backgroundcolor=\color{gray!20},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	frame=single,
+	rulecolor=\color{black},
+	tabsize=3,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=false,
+	% keywordstyle=\color{keywords},
+	% keywordstyle=[2]\color{environments},
+	% keywordstyle=[3]\color{options},
+	% commentstyle=\color{comments},
+	% stringstyle=\color{strings},
+	upquote=true,
+	inputencoding=utf8/latin1,
+	extendedchars=true,
+    % keepspaces=true,
+	% identifierstyle=\color{black},
+	columns=fullflexible,
+        literate=
+        {á}{{\'a}}1
+        {à}{{\`a}}1
+        {ã}{{\~a}}1
+        {é}{{\'e}}1
+        {ê}{{\^e}}1
+        {í}{{\'i}}1
+        {ó}{{\'o}}1
+        {õ}{{\~o}}1
+        {ú}{{\'u}}1
+        {ü}{{\"u}}1
+        {ç}{{\c{c}}}1
+}
+
+
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\bfseries\uppercase}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\begin{center}
+    \Large\textbf{Relatório Final: Projeto Prático de Processamento Paralelo e Distribuído}\\
+    \textbf{Integrantes: Aluno A, Aluno B, Aluno C, Aluno D}
+\end{center}
+
+
+\section{Introdução}
+% Escreva aqui uma breve introdução sobre a tarefa de Ciência de Dados escolhida e uma visão geral dos dois algoritmos selecionados para o estudo comparativo.
+
+\section{Algoritmos Implementados}
+
+\subsection{Algoritmo 1: [Nome do Algoritmo] (Responsáveis: Nome do Aluno A e Aluno B)}
+% Detalhe o algoritmo, seus passos e as escolhas de projeto do primeiro algoritmo. Explique explicitamente as decisões tomadas para implementar o paralelismo ou a distribuição (ex: uso de Threads, ExecutorService, ForkJoin ou Spark). 
+
+\subsection{Algoritmo 2: [Nome do Algoritmo] (Responsáveis: Nome do Aluno C e Aluno D)}
+% Detalhe o algoritmo, seus passos e as escolhas de projeto do primeiro algoritmo. Explique explicitamente as decisões tomadas para implementar o paralelismo ou a distribuição (ex: uso de Threads, ExecutorService, ForkJoin ou Spark). 
+
+\section{Setup Experimental}
+
+\subsection{Datasets Escolhidos}
+% Descreva os dois datasets utilizados nos testes (origem dos dados, se são reais ou sintéticos, características e distribuições). Lembre-se que o tamanho deve variar no intervalo recomendado (de 10.000 a 150.000 pontos, com aumentos graduais, ex: passo de 20k em 20k).
+
+\subsection{Linguagem e Configuração do Ambiente}
+% Informe a linguagem utilizada (Java ou Scala/Spark) e descreva o ambiente de hardware e software utilizado para os testes (número de núcleos/cores da CPU, limite de memória alocado para a JVM). 
+
+\section{Análise de Escalabilidade}
+% Apresente os gráficos comparativos (Tamanho do Dataset vs. Tempo de Execução) para cada dataset. Analise o comportamento das duas linhas/séries correspondentes aos algoritmos. Discuta os gargalos observados e relate se os resultados condizem com a teoria ou com o esperado para a arquitetura paralela escolhida.
+
+\section{Conclusões}
+% Resuma as principais conclusões obtidas a partir dos experimentos práticos. Comente qual dos algoritmos apresentou melhor desempenho e escalabilidade sob diferentes volumes de dados. Aponte limitações da implementação atual e sugira possíveis melhorias ou trabalhos futuros.
+
+\section*{Declaração de Uso de IA}
+% Declare explicitamente se a Inteligência Artificial foi utilizada no projeto (conforme as regras da disciplina: permitida apenas para leitura inicial de arquivos, scripts de automação de testes e plots de resultados). 
+
+\end{document}

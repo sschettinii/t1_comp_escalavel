@@ -1,5 +1,9 @@
 # Trabalho de Computação Escalável
 
+## Documentação do trabalho
+
+As [instruções do trabalho do semestre](docs/trabalho-semestre/README.md) reúnem os requisitos, o cronograma, as regras de uso de IA e os materiais originais fornecidos pela professora.
+
 ## Ingestão dos dados
 
 Com o Python 3 instalado, execute na raiz do repositório:
@@ -19,4 +23,9 @@ Os algoritmos Random Forest e KNN serão implementados para regressão e compara
 
 ## Uso de IA generativa
 
-O script de ingestão `download_data.py` foi implementado com auxílio de IA generativa.
+Foi utilizada IA generativa para:
+
+- implementar a ingestão inicial dos arquivos em `download_data.py`;
+- organizar e transcrever as instruções da professora em `docs/trabalho-semestre/README.md`.
+
+Não foi utilizada IA generativa na implementação dos algoritmos paralelos ou distribuídos.
