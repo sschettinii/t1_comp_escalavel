@@ -4,3 +4,18 @@
 # Arquivos locais do Python
 __pycache__/
 *.py[cod]
+
+# O Scala gerou uma série de arquivos quando rodou o projeto, mas não são necessários para o versionamento
+target/
+project/target/
+project/project/
+.bsp/
+.metals/
+.bloop/
+metals.sbt
+spark-warehouse/
+
+# Configurações de IDEs
+.idea/
+*.iml
+.vscode/
