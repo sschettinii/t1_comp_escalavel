@@ -40,6 +40,10 @@ RESULTADO,<algoritmo>,<dataset>,<n>,<tempo_ms>,<rmse>
 
 O tempo medido não inclui a leitura do CSV nem a inicialização do Spark.
 
+## Estudos de Scala
+
+O material usado para aprender Scala antes da implementação está em [`estudos/scala/`](estudos/scala/README.md), com exercícios em notebook e instruções para montar o ambiente Jupyter.
+
 ## Uso de IA generativa
 
 Foi utilizada IA generativa para:
@@ -48,6 +52,7 @@ Foi utilizada IA generativa para:
 - implementar a leitura inicial dos CSVs em `src/main/scala/Dados.scala`;
 - implementar a automação dos testes de escalabilidade em `scripts/testes_escalabilidade.py`;
 - implementar a geração dos gráficos em `scripts/grafico_escalabilidade.py`;
+- preparar o material de estudo da linguagem Scala em `estudos/scala/`: enunciados dos exercícios de `ex_scala.ipynb` (as respostas são dos integrantes), notas em `estudos/scala/notas/` e scripts do ambiente Jupyter;
 - organizar e transcrever as instruções da professora em `docs/trabalho-semestre/README.md`.
 
 Não foi utilizada IA generativa na implementação dos algoritmos paralelos ou distribuídos.

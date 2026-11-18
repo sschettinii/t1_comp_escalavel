@@ -19,3 +19,12 @@ spark-warehouse/
 .idea/
 *.iml
 .vscode/
+
+# Ambiente local do Jupyter em estudos/scala (gerado por setup-jupyter.sh)
+estudos/scala/.venv/
+estudos/scala/.tools/
+estudos/scala/.coursier-cache/
+estudos/scala/.jupyter/
+estudos/scala/.jdk/
+.ipynb_checkpoints/
+.DS_Store
